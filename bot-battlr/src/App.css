@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  background-color: #0d1117;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bot-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.bot-card {
+  background: #161b22;
+  border: 2px solid #30363d;
+  border-radius: 12px;
+  width: 200px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+  background-color: #21262d;
+}
+
+.bot-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.delete-btn {
+  background: crimson;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+}
+
+.sort-bar {
+  margin: 20px 0;
+}
+
+.sort-bar button {
+  margin: 0 5px;
+  background-color: #238636;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
