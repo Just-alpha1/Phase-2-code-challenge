@@ -12,7 +12,7 @@ function App() {
   const [filterClass, setFilterClass] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8002/bots")
+    fetch("https://json-server-vercel-sepia-eight.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBots(data))
       .catch((err) => console.error("Fetch error:", err));
@@ -29,7 +29,7 @@ function App() {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:8002/bots/${id}`, { method: "DELETE" });
+    fetch(`https://json-server-vercel-sepia-eight.vercel.app/bots/${id}`, { method: "DELETE" });
     setBots(bots.filter((b) => b.id !== id));
     setArmy(army.filter((b) => b.id !== id));
   };
