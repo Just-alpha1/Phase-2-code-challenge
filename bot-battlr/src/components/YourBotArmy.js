@@ -6,15 +6,19 @@ function YourBotArmy({ army, onRelease, onDelete }) {
     <div className="your-army">
       <h2>Your Bot Army</h2>
       <div className="bot-list">
-        {army.map((bot) => (
-          <BotCard
-            key={bot.id}
-            bot={bot}
-            onClick={() => onRelease(bot)}
-            onDelete={() => onDelete(bot.id)}
-            isArmy={true}
-          />
-        ))}
+        {army.length === 0 ? (
+          <p>No bots added to the army</p>
+        ) : (
+          army.map((bot) => (
+            <BotCard
+              key={bot.id}
+              bot={bot}
+              onDelete={() => onDelete(bot.id)}
+              onRelease={onRelease}
+              isArmy={true}
+            />
+          ))
+        )}
       </div>
     </div>
   );

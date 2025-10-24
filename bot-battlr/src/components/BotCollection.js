@@ -7,7 +7,7 @@ function BotCollection({ bots, onAddToArmy }) {
       <h2>Available Bots</h2>
       <div className="bot-list">
         {bots.map((bot) => (
-          <BotCard key={bot.id} bot={bot} onClick={() => onAddToArmy(bot)} />
+          <BotCard key={bot.id} bot={bot} onAddToArmy={onAddToArmy} />
         ))}
       </div>
     </div>

@@ -43,7 +43,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>🤖 Bot Battlr</h1>
+      <h1>🤖 Bot Battlr.</h1>
       <YourBotArmy army={army} onRelease={handleRelease} onDelete={handleDelete} />
       <SortBar onSort={handleSort} />
       <BotCollection bots={sortedBots} onAddToArmy={handleAddToArmy} />
