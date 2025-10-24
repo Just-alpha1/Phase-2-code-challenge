@@ -81,3 +81,17 @@
   padding: 6px 12px;
   cursor: pointer;
 }
+
+.filter-bar {
+  margin: 20px 0;
+}
+
+.filter-bar button {
+  margin: 0 5px;
+  background-color: #1f6feb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
