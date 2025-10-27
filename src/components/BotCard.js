@@ -16,7 +16,7 @@ function BotCard({ bot, onClick, onDelete, isArmy, onAddToArmy, onRelease }) {
             onAddToArmy(bot);
           }}
         >
-          Add to Army.
+          Add to Army
         </button>
       )}
       {isArmy && (
