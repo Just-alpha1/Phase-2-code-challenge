@@ -7,7 +7,7 @@ function YourBotArmy({ army, onRelease, onDelete }) {
       <h2>Your Bot Army</h2>
       <div className="bot-list">
         {army.length === 0 ? (
-          <p>No bots added to the army</p>
+          <p>No bots added to the Army</p>
         ) : (
           army.map((bot) => (
             <BotCard
