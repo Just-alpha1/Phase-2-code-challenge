@@ -17,7 +17,7 @@ Server endpoints:
 ## Core Features
 
 * View the full roster of robots
-* Click a robot to add it to *YourBotArmy* (recruitable only once)
+* Click a robot to add it to *YourBotArmy* (Done only once)
 * Click a recruited robot to release it
 * Click the red x on a robot card to delete it from the server and UI
 
